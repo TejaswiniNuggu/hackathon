@@ -1,28 +1,28 @@
 'use strict';
-//func();
+ func();
 //creaating input using dom
-// let input=document.createElement('input')
-// input.type="text";
-// input.setAttribute('id','input')
-
-var value=["A Game of Thrones","A Clash of Kings",
-"A Storm of Swords","The Hedge Knight",
-"A Feast for Crows","The Sworn Sword","The Mystery Knigh",
-"A Dance with Dragons","The Princess and the Queen",
-"The Rogue Prince"]
-let input=document.createElement('select')
-//input.type="text";
+let input=document.createElement('input')
+input.type="text";
 input.setAttribute('id','input')
-document.body.appendChild(input)
-for(let val of value){
-    var option=document.createElement('option');
-    option.value=val;
-    option.text=val;
-    //option.value=val;
-    // console.log(option);
-    // option.text=val.charAt(0)+val.slice(1);
-    //console.log(option.text)
-input.appendChild(option);}
+
+// var value=["A Game of Thrones","A Clash of Kings",
+// "A Storm of Swords","The Hedge Knight",
+// "A Feast for Crows","The Sworn Sword","The Mystery Knigh",
+// "A Dance with Dragons","The Princess and the Queen",
+// "The Rogue Prince"]
+// let input=document.createElement('select')
+// //input.type="text";
+// input.setAttribute('id','input')
+// document.body.appendChild(input)
+// for(let val of value){
+//     var option=document.createElement('option');
+//     option.value=val;
+//     option.text=val;
+//     //option.value=val;
+//     // console.log(option);
+//     // option.text=val.charAt(0)+val.slice(1);
+//     //console.log(option.text)
+// input.appendChild(option);}
 document.body.appendChild(input);
 //creating a button with dom
 let button=document.createElement('button')
@@ -99,7 +99,7 @@ async function func(){
             let text5=td5.innerHTML||td5.textContent;
             let text6=td6.innerHTML||td6.textContent;
             let text7=td7.innerHTML||td7.textContent;
-            //console.log(text1,text2,text3,text4,text5,text6,text7)
+            console.log(text1,text2,text3,text4,text5,text6,text7)
             if(text1==inputval||text2==inputval||text3==inputval
                 ||text4==inputval
                 ||text5==inputval||text6==inputval||text7==inputval){
